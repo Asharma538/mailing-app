@@ -1,29 +1,3 @@
-# import smtplib
-# from email.mime.multipart import MIMEMultipart
-# from email.mime.text import MIMEText
-
-# # # Email credentials & recipient
-# from_email = "portfoliocraft.contact@gmail.com"
-# to_email = "agrawal.24@iitj.ac.in"
-# password = ""
-
-# # Read HTML content
-# with open("index.html", "r") as file:
-#     html_content = file.read()
-
-# # Setup message
-# msg = MIMEMultipart("alternative")
-# msg["Subject"] = "Your HTML Email"
-# msg["From"] = from_email
-# msg["To"] = to_email
-# msg.attach(MIMEText(html_content, "html"))
-
-# # Send email using Gmail SMTP
-# with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
-#     server.login(from_email, password)
-#     server.sendmail(from_email, to_email, msg.as_string())
-
-
 import os.path
 
 from google.auth.transport.requests import Request
